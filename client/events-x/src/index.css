@@ -1,0 +1,114 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.content {
+  position: relative;
+  z-index: 1;
+  /* Add your content styles here */
+}
+.page {
+  background-image: url('dark-galaxy-landscape.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20%;
+}
+
+.header-content {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header-content li {
+  margin-right: 20px;
+}
+
+.header-content a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.spacer {
+  height: 30vh;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.main-section {
+  flex-basis: 66.66%;
+  padding-right: 20px;
+}
+
+.main-section h1 {
+  font-size: 36px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-section p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.testimonial-section {
+  flex-basis: 33.33%;
+  padding-left: 20px;
+}
+
+.testimonial-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.testimonial-card p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.testimonial-card p:last-child {
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.7;
+}
